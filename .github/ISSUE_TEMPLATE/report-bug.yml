@@ -1,0 +1,93 @@
+name: Fehler melden
+description: Melden Sie ein Problem oder einen Fehler des Kla.TV Downloaders (Java-Applikation)
+title: "[Hier Kurzbeschreibung des Problems eintragen ...]"
+# labels: 
+#   - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bitte füllen Sie die folgenden Felder aus, um uns zu helfen, den Fehler zu reproduzieren und zu beheben.
+
+  - type: textarea
+    id: problem_description
+    attributes:
+      label: Beschreibung des Problems
+      description: Beschreiben Sie den Fehler in klaren und präzisen Worten.
+      placeholder: Der Fehler tritt auf, wenn...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction_steps
+    attributes:
+      label: Schritte zur Reproduktion
+      description: Listen Sie die Schritte auf, um den Fehler zu reproduzieren.
+      placeholder: |
+        1. Öffnen Sie die Anwendung
+        2. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Erwartetes Verhalten
+      description: Beschreiben Sie, was passieren sollte.
+      placeholder: Die Anwendung sollte...
+
+  - type: textarea
+    id: actual_behavior
+    attributes:
+      label: Tatsächliches Verhalten
+      description: Beschreiben Sie, was tatsächlich passiert ist.
+      placeholder: Stattdessen passiert...
+
+  - type: dropdown
+    id: operating_system
+    attributes:
+      label: Betriebssystem
+      description: Wählen Sie das verwendete Betriebssystem.
+      options:
+        - Windows
+        - macOS
+        - Linux
+    validations:
+      required: true
+
+  - type: input
+    id: os_version
+    attributes:
+      label: Betriebssystem-Version
+      description: Geben Sie die genaue Version des Betriebssystems an.
+      placeholder: z. B. Windows 10, macOS Ventura, Ubuntu 22.04
+
+  - type: input
+    id: app_version
+    attributes:
+      label: Version vom "Kla.TV Downloader"
+      description: Geben Sie die verwendete Version des Kla.TV Downloaders an.
+      placeholder: z. B. 1.2.3
+    validations:
+      required: true
+
+  - type: input
+    id: java_version
+    attributes:
+      label: Java-Version
+      description: Geben Sie die verwendete Java-Version an.
+      placeholder: z. B. OpenJDK 17
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / Fehlermeldungen
+      description: Fügen Sie relevante Fehlermeldungen oder Log-Ausgaben hinzu. **Die Logdateien findet man über Menü `Hilfe` ► `Logs anzeigen`**.
+      placeholder: Kopieren Sie hier die relevanten Logs hinein.
+
+  - type: textarea
+    id: additional_comments
+    attributes:
+      label: Weitere Bemerkungen
+      description: Fügen Sie weitere hilfreiche Details hinzu, falls erforderlich.
+      placeholder: Weitere Details hier einfügen.
